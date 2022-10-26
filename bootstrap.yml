@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/auzun?currentSchema=stock

@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1648824721794-1
+      author: 200688 (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_stock
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: current_price
+                  type: DECIMAL
+              - column:
+                  name: last_update
+                  type: DATETIME
+              - column:
+                  name: deleted
+                  type: BOOLEAN
+            tableName: stock
+
